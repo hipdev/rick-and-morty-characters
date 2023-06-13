@@ -1,3 +1,4 @@
+import CharactersPaginationClient from "@/components/Home/CharactersPaginationClient";
 import { SmallCardLink, Title } from "@/design-system";
 
 export default async function Page() {
@@ -20,6 +21,7 @@ export default async function Page() {
             {results?.map((character: Character) => (
               <SmallCardLink character={character} key={character.id} />
             ))}
+            <CharactersPaginationClient />
           </div>
         )}
       </div>
