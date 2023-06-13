@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Status, Title } from "../..";
 import Link from "next/link";
 
-export const SmallCardLink = ({ character }) => {
+export const SmallCardLink = ({ character }: { character: Character }) => {
   return (
     <Link
       href="#"

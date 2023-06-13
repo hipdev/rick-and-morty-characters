@@ -17,7 +17,7 @@ export default async function Page() {
           </div>
         ) : (
           <div className="grid gap-4 py-10 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
-            {results?.map((character) => (
+            {results?.map((character: Character) => (
               <SmallCardLink character={character} key={character.id} />
             ))}
           </div>
