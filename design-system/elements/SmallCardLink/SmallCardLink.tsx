@@ -6,7 +6,7 @@ import Link from "next/link";
 export const SmallCardLink = ({ character }: { character: Character }) => {
   return (
     <Link
-      href="#"
+      href={`/view/${character.id}`}
       key={character.id}
       className="w-full overflow-hidden rounded-sm bg-zinc-900 opacity-80 shadow-md shadow-zinc-800 transition-opacity hover:opacity-100"
     >
