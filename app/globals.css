@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.main-wrapper {
+  @apply mx-auto max-w-screen-xl px-6 md:px-8 2xl:px-0;
+}
