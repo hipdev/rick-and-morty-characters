@@ -1,4 +1,4 @@
-import { Title } from "@/design-system";
+import { SmallCardLink, Title } from "@/design-system";
 
 export default async function Page() {
   const data = await fetch("https://rickandmortyapi.com/api/character?page=1");
@@ -16,8 +16,10 @@ export default async function Page() {
             </Title>
           </div>
         ) : (
-          <div>
-            <p>Results will be here</p>
+          <div className="grid gap-4 py-10 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4">
+            {results?.map((character) => (
+              <SmallCardLink character={character} key={character.id} />
+            ))}
           </div>
         )}
       </div>
